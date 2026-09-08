@@ -11,13 +11,15 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- icons -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#home">
                 Pratham<span class="text-primary">.</span>
@@ -53,7 +55,8 @@
                     </li>
 
                     <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <button id="themeToggle" class="btn btn-outline-primary" type="button" aria-label="Toggle dark mode">
+                        <button id="themeToggle" class="btn btn-outline-primary" type="button"
+                            aria-label="Toggle dark mode">
                             🌙 Dark
                         </button>
                     </li>
@@ -89,10 +92,12 @@
 
                     <div class="hero-buttons">
                         <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             View Projects
                         </a>
 
                         <a href="#contact" class="btn btn-outline-primary">
+                            <i class="fa-solid fa-phone"></i>
                             Contact Me
                         </a>
                     </div>
@@ -110,7 +115,7 @@
 
 
                 <!-- Right Profile -->
-                <div class="col-lg-5 text-center order-1 order-lg-2 mb-4 mb-lg-0">
+                <div class="col-lg-5 text-center order-1 order-lg-2 my-5 mb-lg-0">
 
                     <div class="profile-wrapper">
 
@@ -127,283 +132,927 @@
         </div>
     </section>
     <!-- About Section -->
-<section id="about" class="about-section py-5">
+    <section id="about" class="about-section py-5">
 
-    <div class="container">
+        <div class="container">
 
-        <!-- Section Heading -->
-        <div class="text-center mb-5">
-            <p class="section-subtitle">GET TO KNOW ME</p>
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <p class="section-subtitle">GET TO KNOW ME</p>
 
-            <h2 class="section-title">
-                About <span>Me</span>
-            </h2>
-        </div>
+                <h2 class="section-title">
+                    About <span>Me</span>
+                </h2>
+            </div>
 
 
-        <div class="row align-items-center g-5">
+            <div class="row align-items-center g-5">
 
-            <!-- Left -->
-            <div class="col-lg-5">
+                <!-- Left -->
+                <div class="col-lg-5">
 
-                <div class="about-box">
-                    <div class="about-number">01</div>
+                    <div class="about-box">
+                        <div class="about-number">01</div>
 
-                    <h3>
-                        Building Ideas Into
-                        <span>Web Experiences.</span>
+                        <h3>
+                            Building Ideas Into
+                            <span>Web Experiences.</span>
+                        </h3>
+
+                        <p>
+                            I enjoy turning ideas into clean, responsive and
+                            user-friendly web applications.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- Right -->
+                <div class="col-lg-7">
+
+                    <h3 class="about-heading">
+                        I'm a passionate Full Stack Developer.
                     </h3>
 
-                    <p>
-                        I enjoy turning ideas into clean, responsive and
-                        user-friendly web applications.
+                    <p class="about-text">
+                        I am a developer who enjoys building modern web
+                        applications and learning new technologies.
+                        I focus on writing clean code and creating smooth
+                        user experiences.
                     </p>
+
+                    <p class="about-text">
+                        My current focus is on Full Stack Development,
+                        working with technologies like React, JavaScript,
+                        Node.js, MongoDB, Python and Django.
+                    </p>
+
+
+                    <!-- Info -->
+                    <div class="row about-info mt-4">
+
+                        <div class="col-sm-6">
+                            <p>
+                                <strong>Name:</strong>
+                                Pratham Soni
+                            </p>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <p>
+                                <strong>Role:</strong>
+                                Full Stack Developer
+                            </p>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <p>
+                                <strong>Focus:</strong>
+                                Web Development
+                            </p>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <p>
+                                <strong>Learning:</strong>
+                                DSA & System Design
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary mt-3">
+                        Let's Connect
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section py-5">
+
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="text-center mb-5">
+                <p class="section-subtitle">MY EXPERTISE</p>
+
+                <h2 class="section-title">
+                    My <span>Skills</span>
+                </h2>
+
+                <p class="section-description">
+                    Technologies and tools I use to build modern web applications.
+                </p>
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- Frontend -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa fa-code"></i>
+                        </div>
+
+                        <h3>Frontend</h3>
+
+                        <p>
+                            Creating responsive and interactive user interfaces.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                            <span>React.js</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Backend -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa fa-server"></i>
+                        </div>
+
+                        <h3>Backend</h3>
+
+                        <p>
+                            Building APIs and server-side applications.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>REST API</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Database -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa fa-database"></i>
+                        </div>
+
+                        <h3>Database</h3>
+
+                        <p>
+                            Working with databases and managing application data.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>MongoDB</span>
+                            <span>MySQL</span>
+                            <span>SQL</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Programming -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa fa-terminal"></i>
+                        </div>
+
+                        <h3>Programming</h3>
+
+                        <p>
+                            Strong programming fundamentals and problem solving.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>Java</span>
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>DSA</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Tools -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa fa-tools"></i>
+                        </div>
+
+                        <h3>Tools</h3>
+
+                        <p>
+                            Tools I use for development and version control.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                            <span>Postman</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Other -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+
+                        <h3>Other</h3>
+
+                        <p>
+                            Additional concepts that support my development work.
+                        </p>
+
+                        <div class="skill-tags">
+                            <span>REST API</span>
+                            <span>OOP</span>
+                            <span>DBMS</span>
+                            <span>System Design</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section py-5">
+
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="text-center mb-4 mb-md-5">
+
+                <p class="section-subtitle">MY WORK</p>
+
+                <h2 class="section-title">
+                    Featured <span>Projects</span>
+                </h2>
+
+                <p class="section-description">
+                    Some of the projects I have built while learning and
+                    improving my development skills.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <!-- Project 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="project-card">
+
+                        <div class="project-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbVccRGc2W0wxXsg-BfzpW8eC_AbpGFrzlmlrBeofHbg&s=10"
+                                alt="College Management System">
+
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Full Stack
+                            </span>
+
+                            <h3>College Management System</h3>
+
+                            <p>
+                                A complete college management platform with
+                                student, teacher and admin functionality.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="fa-solid fa-globe"></i>
+                                    Live Demo
+                                </a>
+
+                                <a href="https://github.com/pratham933" class="btn btn-outline-primary" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="project-card">
+
+                        <div class="project-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGgKoghWJLKph-GDdLoKKFzxoM4HRRZJLPB-JtUHYj2g&s=10"
+                                alt="Social Media Application">
+
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Web Application
+                            </span>
+
+                            <h3>Social Media App</h3>
+
+                            <p>
+                                A social media platform where users can create
+                                posts, like, comment and manage their profiles.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MongoDB</span>
+                            </div>
+
+                            <div class="project-buttons">
+
+                                <a href="https://pratham933.github.io" class="btn btn-primary">
+                                    <i class="fa-solid fa-globe"></i>
+                                    Live Demo
+                                </a>
+
+                                <a href="https://github.com/pratham933" class="btn btn-outline-primary" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Project 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+
+                    <div class="project-card">
+
+                        <div class="project-image">
+                            <img src="https://ebz-static.s3.ap-south-1.amazonaws.com/easebuzz-static/upi-credit-cards-v1.png"
+                                alt="E-Commerce Website">
+
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-category">
+                                Frontend
+                            </span>
+
+                            <h3>E-Commerce Website</h3>
+
+                            <p>
+                                A responsive shopping website with product
+                                listing, filtering and interactive UI.
+                            </p>
+
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap</span>
+                                <span>JavaScript</span>
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MongoDB</span>
+                            </div>
+
+                            <div class="project-buttons">
+
+                                <a href="https://pratham933.github.io" class="btn btn-primary">
+                                    <i class="fa-solid fa-globe"></i>
+                                    Live Demo
+                                </a>
+
+                                <a href="https://github.com/pratham933" class="btn btn-outline-primary" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="experience" class="experience-section py-5">
+
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <p class="section-subtitle">MY JOURNEY</p>
+
+                <h2 class="section-title">
+                    Work <span>Experience</span>
+                </h2>
+
+                <p class="section-description">
+                    My practical experience, internships and professional learning journey.
+                </p>
+            </div>
+
+
+            <!-- Experience Timeline -->
+
+            <div class="experience-timeline">
+
+                <!-- Experience 1 -->
+                <div class="experience-item">
+
+                    <div class="experience-dot"></div>
+
+                    <div class="experience-card">
+
+                        <div class="experience-header">
+
+                            <div>
+                                <span class="experience-type">
+                                    Internship
+                                </span>
+
+                                <h3>Full Stack Developer Intern</h3>
+
+                                <h4>Cuboid Soft</h4>
+                            </div>
+
+                            <span class="experience-date">
+                                2026
+                            </span>
+
+                        </div>
+
+                        <p class="experience-description">
+                            Worked on web development projects and gained
+                            practical experience in frontend and backend
+                            development.
+                        </p>
+
+                        <div class="experience-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Experience 2 -->
+                <div class="experience-item">
+
+                    <div class="experience-dot"></div>
+
+                    <div class="experience-card">
+
+                        <div class="experience-header">
+
+                            <div>
+                                <span class="experience-type">
+                                    Development
+                                </span>
+
+                                <h3>Full Stack Web Development</h3>
+
+                                <h4>Personal Projects</h4>
+                            </div>
+
+                            <span class="experience-date">
+                                2025 – Present
+                            </span>
+
+                        </div>
+
+                        <p class="experience-description">
+                            Built multiple responsive web applications while
+                            learning modern frontend and backend technologies.
+                        </p>
+
+                        <div class="experience-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                            <span>JavaScript</span>
+                            <span>REST API</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Experience 3 -->
+                <div class="experience-item">
+
+                    <div class="experience-dot"></div>
+
+                    <div class="experience-card">
+
+                        <div class="experience-header">
+
+                            <div>
+                                <span class="experience-type">
+                                    Learning
+                                </span>
+
+                                <h3>Software Development</h3>
+
+                                <h4>Self Learning</h4>
+                            </div>
+
+                            <span class="experience-date">
+                                2024 – Present
+                            </span>
+
+                        </div>
+
+                        <p class="experience-description">
+                            Continuously improving programming, problem-solving
+                            and software development skills through projects,
+                            DSA and practical development.
+                        </p>
+
+                        <div class="experience-tech">
+                            <span>Java</span>
+                            <span>Python</span>
+                            <span>DSA</span>
+                            <span>SQL</span>
+                            <span>Git</span>
+                            <span>System Design</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="contact" class="contact-section py-5">
+
+        <div class="container">
+
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+
+                <p class="section-subtitle">GET IN TOUCH</p>
+
+                <h2 class="section-title">
+                    Let's <span>Connect</span>
+                </h2>
+
+                <p class="section-description">
+                    Have a project, opportunity or just want to say hello?
+                    Feel free to reach out.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4 align-items-stretch">
+
+                <!-- CONTACT INFO -->
+                <div class="col-12 col-lg-5">
+
+                    <div class="contact-info">
+
+                        <h3>Let's talk</h3>
+
+                        <p>
+                            I'm always open to discussing new projects,
+                            development opportunities and interesting ideas.
+                        </p>
+
+
+                        <!-- Email -->
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:sopratham2006@gmail.com">
+                                    sopratham2006@gmail.com
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Location -->
+                        <div class="contact-item">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-crosshairs"></i>
+                            </div>
+
+                            <div>
+                                <span>Location</span>
+                                <p>India</p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Social -->
+                        <div class="contact-social">
+
+                            <a href="https://github.com/pratham933" target="_blank" rel="noopener noreferrer">
+                                <i class="fa-brands fa-github"></i>
+
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/pratham-soni-b004b4372" target="_blank"
+                                rel="noopener noreferrer" aria-label="LinkedIn">
+
+                                <i class="fa-brands fa-linkedin-in"></i>
+
+                            </a>
+
+                            <a href="mailto:sopratham2006@gmail.com" aria-label="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT FORM -->
+                <div class="col-12 col-lg-7">
+
+                    <div class="contact-form">
+
+                        <form id="contactForm">
+
+                            <div class="row g-3">
+
+                                <!-- Name -->
+                                <div class="col-12 col-md-6">
+
+                                    <label for="name">
+                                        Your Name
+                                    </label>
+
+                                    <input type="text" id="name" class="form-control" placeholder="Enter your name"
+                                        required>
+
+                                </div>
+
+
+                                <!-- Email -->
+                                <div class="col-12 col-md-6">
+
+                                    <label for="email">
+                                        Email Address
+                                    </label>
+
+                                    <input type="email" id="email" class="form-control" placeholder="Enter your email"
+                                        required>
+
+                                </div>
+
+
+                                <!-- Subject -->
+                                <div class="col-12">
+
+                                    <label for="subject">
+                                        Subject
+                                    </label>
+
+                                    <input type="text" id="subject" class="form-control" placeholder="Enter subject"
+                                        required>
+
+                                </div>
+
+
+                                <!-- Message -->
+                                <div class="col-12">
+
+                                    <label for="message">
+                                        Message
+                                    </label>
+
+                                    <textarea id="message" class="form-control" rows="6"
+                                        placeholder="Write your message..." required></textarea>
+
+                                </div>
+
+
+                                <!-- Button -->
+                                <div class="col-12">
+
+                                    <button type="submit" class="btn btn-primary contact-btn">
+                                        Send Message
+                                        <i class="fa fa-send ms-2"></i>
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="footer-section">
+
+        <div class="container">
+
+            <div class="row align-items-center gy-4">
+
+                <!-- BRAND -->
+                <div class="col-12 col-md-5">
+
+                    <a href="#home" class="footer-logo">
+                        Pratham<span>.</span>
+                    </a>
+
+                    <p class="footer-text">
+                        Full Stack Developer building modern,
+                        responsive and user-friendly web applications.
+                    </p>
+
+                </div>
+
+
+                <!-- QUICK LINKS -->
+                <div class="col-12 col-md-4">
+
+                    <h5 class="footer-title">
+                        Quick Links
+                    </h5>
+
+                    <div class="footer-links">
+
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#contact">Contact</a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SOCIAL -->
+                <div class="col-12 col-md-3">
+
+                    <h5 class="footer-title">
+                        Follow Me
+                    </h5>
+
+                    <div class="footer-social">
+
+                        <a href="https://github.com/pratham933" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i>
+
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/pratham-soni-b004b4372" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                        </a>
+
+                        <a href="https://wa.me/918839144701" target="_blank" rel="noopener noreferrer"
+                            aria-label="WhatsApp">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                        </a>
+
+                    </div>
+
                 </div>
 
             </div>
 
 
-            <!-- Right -->
-            <div class="col-lg-7">
+            <!-- BOTTOM -->
 
-                <h3 class="about-heading">
-                    I'm a passionate Full Stack Developer.
-                </h3>
+            <div class="footer-bottom">
 
-                <p class="about-text">
-                    I am a developer who enjoys building modern web
-                    applications and learning new technologies.
-                    I focus on writing clean code and creating smooth
-                    user experiences.
+                <p>
+                    © 2026 Pratham Soni. All Rights Reserved.
                 </p>
 
-                <p class="about-text">
-                    My current focus is on Full Stack Development,
-                    working with technologies like React, JavaScript,
-                    Node.js, MongoDB, Python and Django.
-                </p>
-
-
-                <!-- Info -->
-                <div class="row about-info mt-4">
-
-                    <div class="col-sm-6">
-                        <p>
-                            <strong>Name:</strong>
-                            Pratham Soni
-                        </p>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <p>
-                            <strong>Role:</strong>
-                            Full Stack Developer
-                        </p>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <p>
-                            <strong>Focus:</strong>
-                            Web Development
-                        </p>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <p>
-                            <strong>Learning:</strong>
-                            DSA & System Design
-                        </p>
-                    </div>
-
-                </div>
-
-                <a href="#contact" class="btn btn-primary mt-3">
-                    Let's Connect
+                <a href="#home" class="back-top">
+                    <i class="bi bi-arrow-up"></i>
+                    Back to Top
                 </a>
 
             </div>
 
         </div>
 
-    </div>
-
-</section>
-<!-- Skills Section -->
-<section id="skills" class="skills-section py-5">
-
-    <div class="container">
-
-        <!-- Heading -->
-        <div class="text-center mb-5">
-            <p class="section-subtitle">MY EXPERTISE</p>
-
-            <h2 class="section-title">
-                My <span>Skills</span>
-            </h2>
-
-            <p class="section-description">
-                Technologies and tools I use to build modern web applications.
-            </p>
-        </div>
-
-
-        <div class="row g-4">
-
-            <!-- Frontend -->
-            <div class="col-md-6 col-lg-4">
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fa fa-code"></i>
-                    </div>
-
-                    <h3>Frontend</h3>
-
-                    <p>
-                        Creating responsive and interactive user interfaces.
-                    </p>
-
-                    <div class="skill-tags">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>Bootstrap</span>
-                        <span>JavaScript</span>
-                        <span>React.js</span>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- Backend -->
-            <div class="col-md-6 col-lg-4">
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fa fa-server"></i>
-                    </div>
-
-                    <h3>Backend</h3>
-
-                    <p>
-                        Building APIs and server-side applications.
-                    </p>
-
-                    <div class="skill-tags">
-                        <span>Node.js</span>
-                        <span>Express.js</span>
-                        <span>Python</span>
-                        <span>Django</span>
-                        <span>REST API</span>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- Database -->
-            <div class="col-md-6 col-lg-4">
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fa fa-database"></i>
-                    </div>
-
-                    <h3>Database</h3>
-
-                    <p>
-                        Working with databases and managing application data.
-                    </p>
-
-                    <div class="skill-tags">
-                        <span>MongoDB</span>
-                        <span>MySQL</span>
-                        <span>SQL</span>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- Programming -->
-            <div class="col-md-6 col-lg-4">
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fa fa-terminal"></i>
-                    </div>
-
-                    <h3>Programming</h3>
-
-                    <p>
-                        Strong programming fundamentals and problem solving.
-                    </p>
-
-                    <div class="skill-tags">
-                        <span>Java</span>
-                        <span>Python</span>
-                        <span>JavaScript</span>
-                        <span>DSA</span>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- Tools -->
-            <div class="col-md-6 col-lg-4">
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fa fa-tools"></i>
-                    </div>
-
-                    <h3>Tools</h3>
-
-                    <p>
-                        Tools I use for development and version control.
-                    </p>
-
-                    <div class="skill-tags">
-                        <span>Git</span>
-                        <span>GitHub</span>
-                        <span>VS Code</span>
-                        <span>Postman</span>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <!-- Other -->
-            <div class="col-md-6 col-lg-4">
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fa-solid fa-diagram-project"></i>
-                    </div>
-
-                    <h3>Other</h3>
-
-                    <p>
-                        Additional concepts that support my development work.
-                    </p>
-
-                    <div class="skill-tags">
-                        <span>REST API</span>
-                        <span>OOP</span>
-                        <span>DBMS</span>
-                        <span>System Design</span>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

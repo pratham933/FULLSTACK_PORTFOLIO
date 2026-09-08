@@ -19,3 +19,33 @@ themeToggle.addEventListener("click", () => {
     }
 
 });
+
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    // Apna WhatsApp number yaha likho
+    const phone = "918839144701";
+
+    const whatsappMessage =
+        `Hello Pratham,%0A%0A` +
+        `Name: ${name}%0A` +
+        `Email: ${email}%0A` +
+        `Subject: ${subject}%0A%0A` +
+        `Message:%0A${message}`;
+
+    const whatsappURL =
+        `https://wa.me/${phone}?text=${whatsappMessage}`;
+
+    window.open(whatsappURL, "_blank");
+
+    contactForm.reset();
+
+});
