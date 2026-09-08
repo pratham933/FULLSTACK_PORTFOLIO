@@ -1,0 +1,558 @@
+html {
+    overflow-x: clip;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    min-height: 100vh;
+    background: #ffffff;
+    color: #111827;
+    transition: 0.3s ease;
+}
+
+.hero-small-text {
+    color: #0d6efd;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.hero-section h1 {
+    font-size: clamp(50px, 7vw, 80px);
+    font-weight: 800;
+    letter-spacing: -3px;
+    margin: 0;
+}
+
+.hero-section h2 {
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.hero-section h2 span {
+    color: #0d6efd;
+}
+
+.hero-description {
+    max-width: 600px;
+    color: #6b7280;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.hero-buttons .btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.hero-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.hero-skills span {
+    padding: 7px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.profile-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-circle {
+    width: min(360px, calc(100vw - 4rem));
+    aspect-ratio: 1;
+    height: auto;
+    border-radius: 50%;
+    padding: 8px;
+    border: 3px solid #0d6efd;
+    position: relative;
+}
+
+.profile-circle::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #dbeafe;
+    top: 15px;
+    left: 15px;
+    z-index: 0;
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-mode .hero-section {
+    background: #0f172a;
+    color: #f8fafc;
+}
+
+.dark-mode .hero-description {
+    color: #94a3b8;
+}
+
+.dark-mode .hero-skills span {
+    border-color: #334155;
+    color: #94a3b8;
+}
+
+.dark-mode .profile-circle {
+    border-color: #3b82f6;
+}
+
+.dark-mode .profile-circle::before {
+    border-color: #1e3a8a;
+}
+
+body.dark-mode .navbar {
+    background-color: #111827 !important;
+}
+
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link {
+    color: #f8fafc;
+}
+
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link.active {
+    color: #60a5fa;
+}
+
+body.dark-mode .navbar-toggler {
+    border-color: #64748b;
+}
+
+body.dark-mode .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 991px) {
+
+    .hero-section {
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    .hero-section .row {
+        min-height: auto !important;
+        row-gap: 2rem;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-skills {
+        justify-content: center;
+    }
+
+    .profile-wrapper {
+        margin-top: 0;
+    }
+
+    .profile-circle {
+        width: min(320px, calc(100vw - 4rem));
+    }
+}
+
+@media (max-width: 575px) {
+
+    .hero-section {
+        padding: 2rem 0 3rem;
+    }
+
+    .hero-small-text {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .hero-section h1 {
+        font-size: clamp(2.45rem, 13vw, 3.25rem);
+        letter-spacing: -2px;
+    }
+
+    .hero-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.65;
+    }
+
+    .hero-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem;
+        margin-top: 1.75rem;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        margin-right: 0;
+        padding: 0.7rem 0.5rem;
+    }
+
+    .hero-skills {
+        gap: 0.5rem;
+        margin-top: 1.75rem;
+    }
+
+    .hero-skills span {
+        padding: 0.4rem 0.65rem;
+    }
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+    background-color: #f8fafc;
+    color: #111827;
+    transition: 0.3s ease;
+}
+
+.section-subtitle {
+    color: #0d6efd;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.section-title {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.section-title span {
+    color: #0d6efd;
+}
+
+
+/* Left Box */
+
+.about-box {
+    padding: 45px;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    background-color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-number {
+    font-size: 80px;
+    font-weight: 800;
+    color: #0d6efd;
+    opacity: 0.1;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+.about-box h3 {
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+}
+
+.about-box h3 span {
+    color: #0d6efd;
+}
+
+.about-box p {
+    color: #6b7280;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+
+/* Right Content */
+
+.about-heading {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.about-text {
+    color: #6b7280;
+    line-height: 1.8;
+    margin-top: 15px;
+}
+
+
+/* Info */
+
+.about-info p {
+    color: #6b7280;
+    margin-bottom: 12px;
+}
+
+.about-info strong {
+    color: #111827;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode .about-section {
+    background-color: #111827;
+    color: #f8fafc;
+}
+
+body.dark-mode .about-box {
+    background-color: #0f172a;
+    border-color: #263244;
+}
+
+body.dark-mode .about-box p,
+body.dark-mode .about-text,
+body.dark-mode .about-info p {
+    color: #94a3b8;
+}
+
+body.dark-mode .about-info strong {
+    color: #f8fafc;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .about-box {
+        padding: 30px;
+    }
+
+    .about-box h3 {
+        font-size: 25px;
+    }
+
+    .about-heading {
+        font-size: 25px;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about-box {
+        padding: 1.5rem;
+        border-radius: 1rem;
+    }
+
+    .about-number {
+        font-size: 4rem;
+    }
+}
+
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills-section {
+    background-color: #ffffff;
+    color: #111827;
+    transition: 0.3s ease;
+}
+
+.section-description {
+    color: #6b7280;
+    max-width: 600px;
+    margin: 15px auto 0;
+}
+
+
+/* Skill Card */
+
+.skill-card {
+    height: 100%;
+    padding: 30px;
+
+    background-color: #f8fafc;
+    border: 1px solid #e5e7eb;
+
+    border-radius: 16px;
+
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-7px);
+    border-color: #0d6efd;
+}
+
+
+/* Icon */
+
+.skill-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background-color: #e8f1ff;
+    color: #0d6efd;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Heading */
+
+.skill-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.skill-card > p {
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+
+/* Tags */
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.skill-tags span {
+    padding: 6px 11px;
+
+    border: 1px solid #dbe2ea;
+    border-radius: 20px;
+
+    font-size: 13px;
+    color: #4b5563;
+
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark-mode .skills-section {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+body.dark-mode .section-description {
+    color: #94a3b8;
+}
+
+body.dark-mode .skill-card {
+    background-color: #111827;
+    border-color: #263244;
+}
+
+body.dark-mode .skill-card:hover {
+    border-color: #60a5fa;
+}
+
+body.dark-mode .skill-icon {
+    background-color: #172554;
+    color: #60a5fa;
+}
+
+body.dark-mode .skill-card > p {
+    color: #94a3b8;
+}
+
+body.dark-mode .skill-tags span {
+    background-color: #0f172a;
+    border-color: #334155;
+    color: #cbd5e1;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .skill-card {
+        padding: 25px;
+    }
+
+}

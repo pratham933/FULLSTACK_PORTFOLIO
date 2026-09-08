@@ -1,1 +1,411 @@
-hh
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                Pratham<span class="text-primary">.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#projects">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#experience">Experience</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#contact">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button id="themeToggle" class="btn btn-outline-primary" type="button" aria-label="Toggle dark mode">
+                            🌙 Dark
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+
+                <!-- Left Content -->
+                <div class="col-lg-7 order-2 order-lg-1">
+
+                    <p class="hero-small-text">
+                        HELLO, I'M
+                    </p>
+
+                    <h1>
+                        Pratham Soni
+                    </h1>
+
+                    <h2>
+                        Full Stack <span>Developer</span>
+                    </h2>
+
+                    <p class="hero-description">
+                        I build modern, responsive and user-friendly web
+                        applications using HTML, CSS, JavaScript, React,
+                        Node.js and Django.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            View Projects
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline-primary">
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <div class="hero-skills">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Django</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Right Profile -->
+                <div class="col-lg-5 text-center order-1 order-lg-2 mb-4 mb-lg-0">
+
+                    <div class="profile-wrapper">
+
+                        <div class="profile-circle">
+                            <img src="images/WhatsApp_Image_2026-01-22_at_18.38.15-removebg-preview.png"
+                                alt="Pratham Soni">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+<section id="about" class="about-section py-5">
+
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="text-center mb-5">
+            <p class="section-subtitle">GET TO KNOW ME</p>
+
+            <h2 class="section-title">
+                About <span>Me</span>
+            </h2>
+        </div>
+
+
+        <div class="row align-items-center g-5">
+
+            <!-- Left -->
+            <div class="col-lg-5">
+
+                <div class="about-box">
+                    <div class="about-number">01</div>
+
+                    <h3>
+                        Building Ideas Into
+                        <span>Web Experiences.</span>
+                    </h3>
+
+                    <p>
+                        I enjoy turning ideas into clean, responsive and
+                        user-friendly web applications.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Right -->
+            <div class="col-lg-7">
+
+                <h3 class="about-heading">
+                    I'm a passionate Full Stack Developer.
+                </h3>
+
+                <p class="about-text">
+                    I am a developer who enjoys building modern web
+                    applications and learning new technologies.
+                    I focus on writing clean code and creating smooth
+                    user experiences.
+                </p>
+
+                <p class="about-text">
+                    My current focus is on Full Stack Development,
+                    working with technologies like React, JavaScript,
+                    Node.js, MongoDB, Python and Django.
+                </p>
+
+
+                <!-- Info -->
+                <div class="row about-info mt-4">
+
+                    <div class="col-sm-6">
+                        <p>
+                            <strong>Name:</strong>
+                            Pratham Soni
+                        </p>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <p>
+                            <strong>Role:</strong>
+                            Full Stack Developer
+                        </p>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <p>
+                            <strong>Focus:</strong>
+                            Web Development
+                        </p>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <p>
+                            <strong>Learning:</strong>
+                            DSA & System Design
+                        </p>
+                    </div>
+
+                </div>
+
+                <a href="#contact" class="btn btn-primary mt-3">
+                    Let's Connect
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Skills Section -->
+<section id="skills" class="skills-section py-5">
+
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="text-center mb-5">
+            <p class="section-subtitle">MY EXPERTISE</p>
+
+            <h2 class="section-title">
+                My <span>Skills</span>
+            </h2>
+
+            <p class="section-description">
+                Technologies and tools I use to build modern web applications.
+            </p>
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- Frontend -->
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fa fa-code"></i>
+                    </div>
+
+                    <h3>Frontend</h3>
+
+                    <p>
+                        Creating responsive and interactive user interfaces.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Bootstrap</span>
+                        <span>JavaScript</span>
+                        <span>React.js</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Backend -->
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fa fa-server"></i>
+                    </div>
+
+                    <h3>Backend</h3>
+
+                    <p>
+                        Building APIs and server-side applications.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>Express.js</span>
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>REST API</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Database -->
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fa fa-database"></i>
+                    </div>
+
+                    <h3>Database</h3>
+
+                    <p>
+                        Working with databases and managing application data.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>MongoDB</span>
+                        <span>MySQL</span>
+                        <span>SQL</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Programming -->
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fa fa-terminal"></i>
+                    </div>
+
+                    <h3>Programming</h3>
+
+                    <p>
+                        Strong programming fundamentals and problem solving.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>DSA</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Tools -->
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fa fa-tools"></i>
+                    </div>
+
+                    <h3>Tools</h3>
+
+                    <p>
+                        Tools I use for development and version control.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>Postman</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Other -->
+            <div class="col-md-6 col-lg-4">
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+
+                    <h3>Other</h3>
+
+                    <p>
+                        Additional concepts that support my development work.
+                    </p>
+
+                    <div class="skill-tags">
+                        <span>REST API</span>
+                        <span>OOP</span>
+                        <span>DBMS</span>
+                        <span>System Design</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
