@@ -177,6 +177,36 @@ body.dark-mode .navbar-toggler-icon {
    MOBILE
 ========================= */
 
+@media (max-width: 991px) {
+
+    .hero-section {
+        text-align: center;
+        padding: 3rem 0;
+    }
+
+    .hero-section .row {
+        min-height: auto !important;
+        row-gap: 2rem;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-skills {
+        justify-content: center;
+    }
+
+    .profile-wrapper {
+        margin-top: 0;
+    }
+
+    .profile-circle {
+        width: min(320px, calc(100vw - 4rem));
+    }
+}
+
 @media (max-width: 575px) {
 
     .hero-section {
