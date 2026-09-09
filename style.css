@@ -184,6 +184,7 @@ body.dark-mode .navbar-toggler-icon {
 @media (max-width: 991px) {
 
     .hero-section {
+        min-height: auto;
         text-align: center;
         padding: 3rem 0;
     }
